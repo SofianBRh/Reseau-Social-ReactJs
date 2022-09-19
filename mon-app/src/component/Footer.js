@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import React from 'react';
+import logo from './image/logo-react-icon.png';
 
 export default function Footer() {
     return (
-        <div className="bg-blue-200 text-black ">
             <div className="bg-blue-500
-             text-3m text-white text-center
-             fixed
+             text-3xl text-black text-center
+        
              bottom-0
-             md:px-10 xl:px-40 py-2">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-                    <img src={logo} className="App-logo" alt="logo" width="30%" height="30%"/>
-                </div>
-                <div className="flex row content-between gap-8">
+            
+             grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 
+             w-full py-6">
+                <div className="px-40 h-20">
+               <img src={logo} className="App-logo" alt="logo" style={{width: 50, height: 50}}/>  
+               </div>
+ 
+                <div className="flex row content-between gap-10">
                     <a className="flex items" href="/">Contact</a>
                     <a className="flex " href="/">Mentions légales</a>
                     <a className="block" href="/">Copyright</a>
                     <a  className="block" href="/">RGPD</a>
                 </div>
-                
             </div>
-        </div>
+
     );
 }
 
