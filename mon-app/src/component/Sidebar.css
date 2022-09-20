@@ -1,0 +1,21 @@
+.sidebar{
+    background-color: rgb(73, 226, 240);
+    padding:10rem;
+    height: 100%;
+
+    
+}
+.test{
+    text-align:center;
+}
+.titre{
+    font-size:4rem;
+    padding: 2rem;
+}
+.list{
+    display:inline-block; 
+
+}
+li{
+    padding: 1rem;
+}
