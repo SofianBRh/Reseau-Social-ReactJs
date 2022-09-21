@@ -1,0 +1,15 @@
+.profil_user{
+    text-align:center;
+}
+.amis_connect{
+    text-align:center;
+    margin-top: 20rem;
+}
+.profil_name{
+    font-size:4rem;
+    margin-top:3rem;
+}
+.profil_messages{
+    font-size:3rem;
+    padding: 1rem;
+}
