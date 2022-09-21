@@ -5,9 +5,7 @@ export default function Footer() {
     return (
             <div className="bg-blue-500
              text-3xl text-black text-center
-        
              bottom-0
-            
              grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 
              w-full py-6">
                 <div className="px-40 h-20">
