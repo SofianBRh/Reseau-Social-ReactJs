@@ -31,6 +31,7 @@ const Login = () => {
             <TextField
             className=" flex justify-center w-full bg-white" 
               id="name"
+              color="primary" focused 
               label="Name"
               type="text"
               name="name"
@@ -41,6 +42,7 @@ const Login = () => {
             <TextField
             className=" flex justify-center w-full bg-white border-solid"
               id="firstname"
+              color="primary" focused 
               label="Firstname"
               type="text"
               name="firstname"
@@ -50,7 +52,9 @@ const Login = () => {
         <div className="py-4"> 
             <TextField
             className=" flex justify-center w-full  bg-white"
+            color="primary" focused 
               id="identifiant"
+             
               label="username"
               type="text"
               name="identiant"
@@ -60,6 +64,7 @@ const Login = () => {
         <div className="py-4">
             <TextField
             className=" flex justify-center w-full  bg-white"
+            color="primary" focused 
               id="password"
               label="password"
               type="text"
