@@ -7,7 +7,7 @@ import { Button, TextField } from "@mui/material";
 
 import "./Login.css";
 
-const Login = () => {
+const Register = () => {
   const [credentials, setCredentials] = useState({
     identifiant: "",
     password: "",
@@ -96,4 +96,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;

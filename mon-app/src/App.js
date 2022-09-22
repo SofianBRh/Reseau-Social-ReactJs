@@ -3,7 +3,7 @@ import  React from 'react';
 import './App.css';
 import Home from './pages/Home';
 import Profil from './pages/Profil';
-import Login from './pages/Login';
+import Register from './pages/Register';
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/profil' element={<Profil />}/>
-        <Route path='/Inscription' element={<Login />}/>
+        <Route path='/Inscription' element={<Register />}/>
       </Routes>
       </>
 
