@@ -11,7 +11,7 @@ html{
 .profil{
 display: flex;
 justify-content: space-between;
-background-color: rgb(155, 216, 218);
+background-color: rgb(191 219 254);
 }
 .divCard{
     margin: 0 auto;
