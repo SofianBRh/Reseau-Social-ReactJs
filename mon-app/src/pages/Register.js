@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "../component/Navbar.js";
 import Footer from "../component/Footer.js";
 import { Button, TextField } from "@mui/material";
-
+import { NavLink } from 'react-router-dom';
 
 
 import "./Login.css";
@@ -50,6 +50,17 @@ const Register = () => {
               onChange={handleChange}
             />
         </div>
+        <div className=" py-4">
+            <TextField
+            className=" flex justify-center w-full bg-white" 
+              id="mail"
+              color="primary" focused 
+              label="Adresse mail"
+              type="text"
+              name="mail"
+              onChange={handleChange}
+            />
+        </div>
         <div className="py-4"> 
             <TextField
             className=" flex justify-center w-full  bg-white"
@@ -74,6 +85,7 @@ const Register = () => {
             />
         </div>
           <div className="py-4">
+            <NavLink to="/profil">
             <Button
             className=""
               size="large"
@@ -84,7 +96,7 @@ const Register = () => {
             >
               Inscription
             </Button>
-     
+            </NavLink>
           </div>
         </form>
         

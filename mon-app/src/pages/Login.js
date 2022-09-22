@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "../component/Navbar.js";
 import Footer from "../component/Footer.js";
 import { Button, TextField } from "@mui/material";
-
+import { NavLink } from 'react-router-dom';
 
 
 import "./Login.css";
@@ -70,6 +70,7 @@ const Login = () => {
             </Button>
           </div>
           <div className="py-4 m-4">
+            <NavLink to="/inscription">
             <Button
             className=""
               size="large"
@@ -80,6 +81,7 @@ const Login = () => {
             >
               S'inscrire
             </Button>
+            </NavLink>
           </div>
           </div>
         </form>
