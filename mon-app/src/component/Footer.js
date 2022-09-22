@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './image/logo-react-icon.png';
+import { NavLink } from 'react-router-dom';
 
 export default function Footer() {
     return (
@@ -9,14 +10,17 @@ export default function Footer() {
              grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 
              w-full py-6">
                 <div className="px-40 h-20">
+                <NavLink to="/">
                <img src={logo} className="App-logo" alt="logo" style={{width: 50, height: 50}}/>  
+               </NavLink>
                </div>
- 
+             
                 <div className="flex row content-between gap-10">
-                    <a className="flex items" href="/">Contact</a>
-                    <a className="flex " href="/">Mentions légales</a>
-                    <a className="block" href="/">Copyright</a>
-                    <a  className="block" href="/">RGPD</a>
+              
+                    <a className="" href="/">Contact</a>
+                    <a className=" " href="/">Mentions légales</a>
+                    <a className="" href="/">Copyright</a>
+                    <a  className="" href="/">RGPD</a>
                 </div>
             </div>
 
