@@ -58,6 +58,7 @@ const Login = () => {
       </a>
       <div className="flex">
           <div className="py-4 m-4">
+            <NavLink to="/profil">
             <Button
             className=""
               size="large"
@@ -68,6 +69,7 @@ const Login = () => {
             >
               Connexion
             </Button>
+            </NavLink>
           </div>
           <div className="py-4 m-4">
             <NavLink to="/inscription">
