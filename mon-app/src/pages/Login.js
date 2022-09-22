@@ -7,7 +7,7 @@ import { Button, TextField } from "@mui/material";
 
 import "./Login.css";
 
-const Register = () => {
+const Login = () => {
   const [credentials, setCredentials] = useState({
     identifiant: "",
     password: "",
@@ -25,37 +25,17 @@ const Register = () => {
   return (
     <>
       <Navbar />
+     
       <div className="flex justify-center bg-blue-200">
+     
         <form className="flex justify-center flex-col min-h-screen">
-        <h1 className=" text-5xl text-blue-600 m-4 p-20">S'inscrire</h1>
-       <div className=" py-4">
-            <TextField
-            className=" flex justify-center w-full bg-white" 
-              id="name"
-              color="primary" focused 
-              label="Name"
-              type="text"
-              name="name"
-              onChange={handleChange}
-            />
-        </div>
-        <div className="py-4">
-            <TextField
-            className=" flex justify-center w-full bg-white border-solid"
-              id="firstname"
-              color="primary" focused 
-              label="Firstname"
-              type="text"
-              name="firstname"
-              onChange={handleChange}
-            />
-        </div>
+        <h1 className=" text-5xl text-blue-600 m-4 p-20">Se connecter</h1>
+        
         <div className="py-4"> 
             <TextField
             className=" flex justify-center w-full  bg-white"
             color="primary" focused 
               id="identifiant"
-             
               label="username"
               type="text"
               name="identiant"
@@ -73,7 +53,11 @@ const Register = () => {
               onChange={handleChange}
             />
         </div>
-          <div className="py-4">
+        <a class="inline-block align-baseline font-bold text-sm text-blue-700 hover:text-blue-800" href="#">
+        Mot de passe oublié ?
+      </a>
+      <div className="flex">
+          <div className="py-4 m-4">
             <Button
             className=""
               size="large"
@@ -82,9 +66,21 @@ const Register = () => {
               color="primary"
               type="submit"
             >
-              Inscription
+              Connexion
             </Button>
-     
+          </div>
+          <div className="py-4 m-4">
+            <Button
+            className=""
+              size="large"
+              variant="contained"
+              disableElevation
+              color="primary"
+              type="submit"
+            >
+              S'inscrire
+            </Button>
+          </div>
           </div>
         </form>
         
@@ -94,4 +90,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Login;
