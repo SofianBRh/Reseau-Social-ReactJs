@@ -13,25 +13,29 @@ const Home = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios
+
+    const getData = async () => {
+     await axios
       .get('https://127.0.0.1:8000/api/posts')
       .then((data) => {
         setPosts(data.data['hydra:member']);
-        console.log(posts);
       })
       .catch((e) => {
         setLoading(false);
         console.log(e);
       });
-  }, [posts]);
+
+  }
+
+  getData();
+},
+  []);
   return (
     <>
       <Navbar />
       <div className="home">
         <div className="divCard">
-
-            <Cards />
-            <Cards />
+            {posts.map(post => <Cards key={post.id} post={post} />)}
         </div>
           <div className="body">
             <Sidebar />

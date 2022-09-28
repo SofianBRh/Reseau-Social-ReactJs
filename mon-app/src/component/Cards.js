@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import "./Cards.css";
 import image from "./image/artificial-intelligence.jpg";
+import axios from "axios";
 
-const Header = () => {
-  
+
+const Header = ({post}) => {
+ 
   return (
     <>
       <div className="user">
@@ -13,10 +15,7 @@ const Header = () => {
         <h3 className="name">name firstname</h3>
       </div>
       <p className="message">
-        {" "}
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
+        {post.content}
       </p>
     </>
   );
@@ -54,10 +53,10 @@ const Search = () => {
 
     );
 }
-function Cards() {
+function Cards({post}) {
   return (
     <div className="card">
-      <Header />
+      <Header post={post} />
       <Img />
       <Reponses />
       <Reponses />
